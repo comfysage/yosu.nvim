@@ -1,7 +1,8 @@
+rockspec_format = "3.0"
 package = "yosu.nvim"
-version = "dev-1"
+version = "dev-2"
 source = {
-   url = "git+ssh://git@github.com/comfysage/yosu.nvim.git"
+   url = "git://github.com/comfysage/" .. package
 }
 description = {
    summary = "a small ui lib for neovim.",
@@ -11,10 +12,12 @@ description = {
    homepage = "https://github.com/comfysage/" .. package,
    license = "GPL3"
 }
-build = {
-  type = 'builtin',
-  copy_directories = { 'doc' } ,
-}
 dependencies = {
-  'lua >= 5.1',
+   "lua >= 5.1"
+}
+build = {
+   type = "builtin",
+   copy_directories = {
+      "doc"
+   }
 }
