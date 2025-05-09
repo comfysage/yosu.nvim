@@ -18,3 +18,6 @@ build = {
       ["yosu.model"] = "lua/yosu/model.lua"
    }
 }
+dependencies = {
+  'lua >= 5.1',
+}
