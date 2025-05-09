@@ -12,11 +12,8 @@ description = {
    license = "GPL3"
 }
 build = {
-   type = "builtin",
-   modules = {
-      ["yosu.init"] = "lua/yosu/init.lua",
-      ["yosu.model"] = "lua/yosu/model.lua"
-   }
+  type = 'builtin',
+  copy_directories = { 'doc' } ,
 }
 dependencies = {
   'lua >= 5.1',
